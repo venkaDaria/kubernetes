@@ -6,7 +6,7 @@ public class Example {
         Connector connector = new Connector();
 
         try {
-            connector.apply("mysql.yaml", "default");
+            connector.apply("example.yaml", "default");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,0 +1,18 @@
+*.jar
+
+.settings
+.gradle
+.project
+.metadata
+.classpath
+
+bin/
+
+.DS_Store
+
+out
+build
+**/build  target
+**/target
+
+.idea/

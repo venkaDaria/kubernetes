@@ -7,6 +7,12 @@ public class Example {
 
         try {
             connector.apply("example.yaml");
+
+            System.out.println(connector.getClient().pods()
+                    .inNamespace(connector.getController().getNamespace()).withName("hello-world").get());
+            System.out.println(connector.getClient().pods().withName("hello-world").get());
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
